@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+
+<div>
+	<h3 class="titulo">Cadastro de Usuário</h3>
+</div>
+<div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">NOME</span> <input
+			id="nome-usuario" type="text" class="form-control"
+			placeholder="Ex: Jardel" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">E-MAIL</span> <input
+			id="email-usuario" type="text" class="form-control"
+			placeholder="Ex: jardel@email.com" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">CELULAR</span> <input
+			id="celular-usuario" type="text" class="form-control"
+			placeholder="Ex: (00)00000-0000" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">TELEFONE</span> <input
+			id="telefone-usuario" type="text" class="form-control"
+			placeholder="Ex: (00)0000-0000" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">ENDEREÇO</span> <input
+			id="endereco-usuario" type="text" class="form-control"
+			placeholder="Ex: código do endereço: 1, 2, 3..."
+			aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">TIPO DE
+			USUÁRIO</span> <label class="radio-inline" style="padding-left: 15%">
+			<input type="radio" name="tipo-usuario" value="0" onclick="fecharPropriedadesDoUsuario()">Cliente
+		</label> <label class="radio-inline"> <input type="radio"
+			name="tipo-usuario" value="1" onclick="abrirPropriedadesDoUsuario()">Funcionário
+		</label>
+	</div>
+	<div id="conteudo-secundario"></div>
+	<div class="btn-group" role="group" aria-label=""
+		style="padding-left: 5%">
+		<button type="button" class="btn btn-default" id="cadastro"
+			onclick="cadastrarUsuario();">Cadastrar</button>
+	</div>
+</div>
+
+<div id="modal-mensagens" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 id="modal-title" class="modal-title"></h4>
+			</div>
+			<div class="modal-body">
+				<label id="modal-mensagem"></label>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

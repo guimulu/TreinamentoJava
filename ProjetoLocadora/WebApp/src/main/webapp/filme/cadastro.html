@@ -1,0 +1,66 @@
+<meta charset="utf-8">
+<div>
+	<h3 class="titulo">Cadastro de Filme</h3>
+</div>
+<div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">TITULO</span> <input
+			id="descricao-filme" type="text" class="form-control"
+			placeholder="Ex: Projeto ALmanaque" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">RESUMO</span> <input
+			id="resumo-filme" type="text" class="form-control"
+			placeholder="Ex: ..." aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">DURAÇÃO</span> <input
+			id="duracao-filme" type="text" class="form-control"
+			placeholder="Ex: 01:54:12" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">ANO</span> <input
+			id="ano-filme" type="text" class="form-control"
+			placeholder="Ex: yyyy-mm-dd 00:00:00.000"
+			aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">CLASSIFICAÇÃO</span>
+		<input id="classificacao-filme" type="text" class="form-control"
+			placeholder="Ex: 16" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">CATEGORIA</span> <select
+			class="form-control selcls" id="dropdown-categoria">
+
+		</select>
+	</div>
+	<div class="btn-group" role="group" aria-label=""
+		style="padding-left: 5%">
+		<button type="button" class="btn btn-default" id="cadastro"
+			onclick="cadastrarFilme();">Cadastrar</button>
+	</div>
+</div>
+
+<div id="modal-mensagens" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 id="modal-title" class="modal-title"></h4>
+			</div>
+			<div class="modal-body">
+				<label id="modal-mensagem"></label>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

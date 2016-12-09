@@ -1,0 +1,98 @@
+.navbar-inverse {
+    background-color: rgba(154, 0, 0, 0.94) !important;
+    border-color: #9a0909 !important;
+}
+
+.titulo{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+}
+
+table td{
+	padding: 5px;
+}
+
+.input-group{
+	padding-bottom: 15px;
+	padding-left: 5%;
+    padding-right: 50%;
+}
+
+#func{
+	padding-left: 5% !important;
+    padding-right: 50%;
+}
+    
+.btn-default{
+	color: #a4a4a4 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    padding-top: 15px !important;
+}
+
+#lista {
+	width: 90%;
+    max-width: 90%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+#cadastro{
+	color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+    padding-top: 8px !important;
+    margin-bottom: 30%;
+}
+
+body {
+	background: url(../img/background.jpg) no-repeat center top fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	margin:0;
+	padding:0;
+}
+
+#conteudo-principal{
+	background-color: rgba(238, 238, 238, 0.9) !important;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	padding-top: 20px;
+	background-color: rgba(241, 241, 241, 0);
+	height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
